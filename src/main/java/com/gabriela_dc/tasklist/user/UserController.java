@@ -27,10 +27,4 @@ public class UserController {
         var userCreated = this.userRepository.save(userModel);
         return ResponseEntity.status(HttpStatus.CREATED).body(userCreated);
     }
-
-    @GetMapping("/print")
-    public String printHello(){
-        return "Hello World";
-
-    }
 }
